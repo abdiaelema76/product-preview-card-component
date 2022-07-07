@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+}
+.preview-card{
+    display: flex;
+    min-width: 600px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+
+}
+.preview-img{
+    width: 50%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.preview{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 35px 40px;
+
+}
+.item{
+    font-size: 14px;
+    color:hsl(228, 12%, 48%) ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h1{
+    font-size: 38px;
+    color:hsl(212, 21%, 14%) ;
+}
+.text{
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(228, 12%, 48%);
+    width: 85%;
+    line-height: 1.5;
+
+    
+}
+.prices{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+
+}
+.updated-price{
+    font-size: 35px;
+    color:hsl(158, 36%, 37%) ;
+
+}
+.previous-price{
+    font-size: 12px;
+    color:hsl(228, 12%, 48%); 
+    text-decoration: line-through;
+}
+button{
+    width: 100%;
+    padding: 17px 0;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(158, 36%, 37%) ;
+    color:hsl(0, 0%, 100%) ;
+    display: flex;
+    gap: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(159, 88%, 6%);
+}
+@media (max-width: 375px){
+    .preview-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+    }
+    .preview-img{
+        width: 100%;
+        height: 350px;
+        background-image:url(/images/image-product-mobile.jpg);
+        border-radius: 10px;
+    }
+    .preview{
+        width: 100%;
+        row-gap: 12px;
+        padding: 25px;
+        border-bottom: 0 0 10px 10px;
+    }
+    .item{
+        font-size: 14px;
+
+    }
+    h1{
+        font-size: 32px;
+        line-height: 1;
+    }
+    .text{
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.7;
+        font-size: 11px;
+    }
+    button{
+        margin-top: 10px;
+    }
+}
+    
+
+
+ 
